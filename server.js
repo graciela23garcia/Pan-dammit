@@ -3,6 +3,9 @@ const app = express();
 const expressHandlebars = require(`express-handlebars`);
 const PORT = process.env.PORT || 8080;
 
+//immediately invoked function express
+// add in later ', db.sequelize'
+require(`./routes/routes.js`)(app);
 //var db = require("./models");
 
 app.use(express.static(`public`));
