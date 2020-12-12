@@ -1,0 +1,19 @@
+DROP DATABASE IF EXISTS users;
+CREATE DATABASE users;
+USE users;
+
+CREATE TABLE IF NOT EXISTS 'Users' {
+  `id` Int AUTO_INCREMENT NOT NULL,
+  `username` VARCHAR(32) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  PRIMARY KEY ( `id` ) 
+};
+
+CREATE TABLE IF NOT EXISTS 'Posts' {
+  `id` Int AUTO_INCREMENT NOT NULL,
+  `title` VARCHAR NOT NULL,
+  `body` VARCHAR NOT NULL,
+  `post_time` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ( `id` ),
+  FOREIGN KEY ( `user_id` ) REFERENCES `Users` ( `id` )
+};
