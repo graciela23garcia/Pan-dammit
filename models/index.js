@@ -10,9 +10,9 @@ const db = {};
 let sequelize = null;
 
 if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable]);
+  sequelize = new SequelizeObj(process.env[config.use_env_variable]);
 } else {
-  sequelize = new Sequelize(config.database, config.username, config.password, config);
+  sequelize = new SequelizeObj(config.database, config.username, config.password, config);
 }
 
 fs
@@ -21,7 +21,8 @@ fs
     return (file.indexOf(".") !== 0) && (file !== basename) && (file.slice(-3) === ".js");
   })
   .forEach(function(file) {
-    var model = sequelize["import"](path.join(__dirname, file));
+    const model = require(path.join(__dirname, file))(sequelize, SequelizeObj.DataTypes);
+    /* var model = sequelize["import"](path.join(__dirname, file)); */
     db[model.name] = model;
   });
 
