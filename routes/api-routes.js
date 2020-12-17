@@ -1,5 +1,12 @@
 'use strict';
 
+app.post(`/api/login`, passport.authenticate(`local`), (req, res) => {
+  const user = {
+    user: req.user
+  };
+  res.render(`login`, user);
+});
+
 app.post(`/api/signup`, (req, res) => {
   db.User.create({
     email: req.body.email,
