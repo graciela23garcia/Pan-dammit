@@ -7,7 +7,8 @@ const PORT = process.env.PORT || 8080;
 const db = require(`./models`);
 
 // immediately invoked function express
-require(`./routes/routes.js`)(app, db.sequelize);
+require(`./routes/html-routes.js`)(app, db.sequelize);
+require(`./routes/api-routes.js`)(app, db.sequelize);
 
 app.use(express.static(`public`));
 app.use(express.urlencoded({ extended: true }));
