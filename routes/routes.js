@@ -6,6 +6,6 @@ module.exports =
         // if (req.user) {
             // res.redirect('');
         // } else {
-            res.render('index');
+            res.render('mentalHealth');
     });
 }
