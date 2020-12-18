@@ -1,19 +1,20 @@
 <nav class="navbar navbar-light">
-        <div class=" container-fluid">
-            <a id="brand-name" class="navbar-brand" href="#">
-                <img id="brand-icon" src="../public/assets/pan-dammit_mascot_colorscheme.png">
+      <div class=" container-fluid">
+        <a id="brand-name" class="navbar-brand" href="#"></a>
+           <img id="brand-icon" src="../public/assets/pan-dammit_mascot_colorscheme.png">
                 Pan-dammit
             </a>
-        </div>
-        
-  <div class="collapse" id="navbarToggleExternalContent">
-  <div class="bg-dark p-4">
-    <h5 class="text-white h4">Collapsed content</h5>
-    <span class="text-muted">Toggleable via the navbar brand.</span>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
+               <div class="nav-item active">
+ <a class="nav-link" href="/views/mentalhealth.handlebars">Mental Health Resources <span class="sr-only"></span></a>
+               </div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="myDropdown" data-bs-toggle="dropdown" aria-expanded="false" href="#welcomePage.handlebars">
+   Home
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <li><button class="dropdown-item" type="button" href="/views/moviesPage.handlebars"></button>Movies</button></li>
+    <li><button class="dropdown-item" type="button"href="/views/blogPage.handlebars"></button>Blog</button></li>
+  </ul>
 </div>
 </nav>
 
@@ -27,5 +28,9 @@
 </div>
 <button type="submit">Share</button>
 <div class="container-fluid">
-  
 </div>
+<script>
+  $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+  </script>

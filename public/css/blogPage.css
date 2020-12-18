@@ -12,6 +12,6 @@ nav {
     height: auto;
     border-radius: 50%;
 }
-#navbarToggleExternalContent {
+.dropdown-menu {
     float: top right;
 }
