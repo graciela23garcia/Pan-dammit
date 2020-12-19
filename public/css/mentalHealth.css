@@ -12,10 +12,23 @@ nav {
     height: auto;
     border-radius: 50%;
 }
-.img-fluid{
-        height: 100%; 
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
 
+body, html {
+    height: 100%;
+  }
+  .jumbotron{ 
+	background-image: url("https://c.stocksy.com/a/h7U500/z9/1307437.jpg"); 
+	background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+  .resourcesContainer{
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 15%;
+    top: 100px;
+    background-color: turquoise;
+      
+  }
+  
