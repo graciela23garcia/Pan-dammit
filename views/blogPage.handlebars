@@ -5,15 +5,15 @@
                 Pan-dammit
             </a>
                <div class="nav-item active">
- <a class="nav-link" href="/views/mentalhealth.handlebars">Mental Health Resources <span class="sr-only"></span></a>
+ <a class="nav-link" href="mentalhealth">Mental Health Resources <span class="sr-only"></span></a>
                </div>
 <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" href="/views/welcomePage.handlebars">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" href="welcomePage">
    Home
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <li><button class="dropdown-item" type="button" href="/views/moviesPage.handlebars"></button>Movies</button></li>
-    <li><button class="dropdown-item" type="button" href="/views/blogPage.handlebars"></button>Blog</button></li>
+    <li><button class="dropdown-item" type="button" href="movies"></button>Movies</button></li>
+    <li><button class="dropdown-item" type="button" href="blog"></button>Blog</button></li>
   </ul>
 </div>
 </nav>
@@ -27,7 +27,10 @@
   <textarea class="form-control" id="blogPost" rows="3"></textarea>
 </div>
 <button type="submit">Share</button>
-<div class="container-fluid">
+<div class="maincontainer-fluid">
+  <h1>User:</h1>
+  <h2>Title:</h2>
+
 </div>
 <script>
   var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))

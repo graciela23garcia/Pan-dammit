@@ -6,6 +6,8 @@ CREATE TABLE IF NOT EXISTS `Users` (
   `id` Int AUTO_INCREMENT NOT NULL,
   `username` VARCHAR(32) NOT NULL,
   `password` VARCHAR(255) NOT NULL,
+  `authenticated` BOOLEAN DEFAULT false,
+  `genres` VARCHAR(32),
   PRIMARY KEY ( `id` ) 
 );
 
@@ -17,4 +19,18 @@ CREATE TABLE IF NOT EXISTS `Posts` (
   `UserId` INTEGER NOT NULL,
   PRIMARY KEY ( `id` ),
   FOREIGN KEY ( `UserId` ) REFERENCES `Users` ( `id` )
+);
+
+CREATE TABLE `movie_data`
+(
+	`id` int NOT NULL AUTO_INCREMENT,
+  `genre` varchar(32),
+	PRIMARY KEY ( `id` )
+);
+
+CREATE TABLE `tvshow_data`
+(
+	`id` int NOT NULL AUTO_INCREMENT,
+  `genre` varchar(32),
+	PRIMARY KEY ( `id` )
 );
