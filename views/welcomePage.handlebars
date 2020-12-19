@@ -1,32 +1,100 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="">Pan-dammit!</a>
+        <a class="navbar-brand" href="/">
+            <div class="logo-image">
+                  <img src="/public/assets/pan-dammit.jpg" class="img-fluid">
+            </div></a>
+        <a class="navbar-brand" href="welcomePage.handlebars">Pan-dammit!</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="">Home <span class="sr-only"></span></a>
+              <a class="nav-link" href="welcomePage.handlebars">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="">Mental Health Resources <span class="sr-only"></span></a>
+                <a class="nav-link" href="mentalhealth.handlebars">Mental Health Resources <span class="sr-only"></span></a>
               </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 More Stuffs
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="">Blogs</a>
+                <a class="dropdown-item" href="blogPage.handlebars">Blogs</a>
                 <a class="dropdown-item" href="">Movies/Shows</a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
-
-    <div class="jumbotron">
+    
+      <div class="jumbotron">
+        <div class="container" style="height: 550px;">
         <h1 class="display-4">Welcome to the Pan-dammit!</h1>
         <p class="lead">This place is for YOU!</p>
         <hr class="my-4">
         <p>For your entertainment only.</p>
-      </div>
+        </div>
+    </div>
+
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-lg-6 mb-4"> 
+                <div class="card"> 
+                    <img class="card-img-top" src="/public/assets/blog.jpg" alt="Blogs"> 
+                    <div class="card-body"> 
+                        <h5 class="card-title">Blogs</h5> 
+                        <p class="card-text"> 
+                            Check out what other people have to share.
+                            Great content here! 
+                        </p> 
+                        <a href="blogPage.handlebars" class="btn btn-outline-secondary btn-sm"> 
+                            Check it out 
+                        </a>
+                    </div> 
+                </div> 
+            </div> 
+            <div class="col-lg-6 mb-4"> 
+                <div class="card"> 
+                    <img class="card-img-top" src="/public/assets/movies.jpg" alt="movies and shows"> 
+  
+                    <div class="card-body"> 
+                        <h5 class="card-title">Movies and Shows</h5> 
+                        <p class="card-text"> 
+                            Search through a whole library of movies and shows!
+                        </p> 
+                          
+                        <a href="" class="btn btn-outline-secondary btn-sm"> 
+                            Search here 
+                        </a>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div>
+            
+            
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #CFD9CE">
+          © 2020 Copyright:
+          <a class="text-dark" href="welcomePage.handlebars">Pan-dammit</a>
+        </div>
+        <!-- Copyright -->
+      </footer>       
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
