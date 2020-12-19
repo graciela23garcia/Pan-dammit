@@ -1,5 +1,5 @@
 'use strict';
-
+let isAuthenticated = require(`../config/middleware/isAuthenticated`);
 // eslint-disable-next-line no-unused-vars
 module.exports = (app, sequelize) => {
   app.get(`/`, (req, res) => {
