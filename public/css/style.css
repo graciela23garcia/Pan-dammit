@@ -1,11 +1,61 @@
 .jumbotron{ 
-	background-image: url('/public/assets/pandammit1.jpg'); 
+	background-image: url('/public/assets/pandammit.jpg'); 
 	background-size: cover; 
 	background-repeat: no-repeat; 
 }  
+.jumbotron h1{
+	color: white;
+}
+.jumbotron p{
+	color: white;
+}
 .box{
 	width: 550px;
  	height: 450px;
  	margin: auto;
- 	position: relative;
+	position: relative;
+	padding: 50px;
+	font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    background-color: #CFD9CE;
+	border-bottom: solid #384D47 .25rem;
+	font-family: 'Quicksand', sans-serif;
+
+}
+.navbar-brand {
+    font-family: 'Chango', display;
+    font-size: 2.5rem;
+	color: #384D47;
+}
+
+.card{
+	padding: 100px;
+	border: 50px;
+	font-family: 'Quicksand', sans-serif;
+
+}
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 644px;
+    height: 20px;
+	margin: 0 auto;
+	font-family: 'Quicksand', sans-serif;
+
+}
+#footer{
+	position:fixed;
+	left: 0;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+
+}
+.logo-image{
+	width: 5rem;
+    height: auto;
+    border-radius: 50%;
 }
