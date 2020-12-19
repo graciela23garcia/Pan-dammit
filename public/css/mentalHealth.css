@@ -1,0 +1,30 @@
+nav {
+    background-color: #CFD9CE;
+    border-bottom: solid #384D47 .25rem;
+}
+#brand-name {
+    font-family: 'Chango', display;
+    font-size: 2.5rem;
+    color: #384D47;
+}
+#brand-icon {
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+body, html {
+    height: 100%;
+  }
+  .jumbotron{ 
+	background-image: url("https://c.stocksy.com/a/h7U500/z9/1307437.jpg"); 
+	background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+  }
+  .resourcesContainer{
+    position: relative;
+    
+      
+  }
+  
