@@ -23,8 +23,11 @@ body, html {
     background-position: center;
   }
   .resourcesContainer{
-    position: relative;
-    
+    position: absolute;
+    width: 60%;
+    height: auto;
+    left: 15%;
+    top: 100px;
       
   }
   
