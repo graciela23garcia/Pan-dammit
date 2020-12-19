@@ -1,4 +1,5 @@
 'use strict';
+const db = require(`../models`);
 const passport = require(`../config/passport`);
 module.exports = function(app) {
   app.post(`/api/login`, passport.authenticate(`local`), (req, res) => {
@@ -9,13 +10,14 @@ module.exports = function(app) {
   });
 
   app.post(`/api/signup`, (req, res) => {
+    console.log(req.body);
     db.User.create({
       email: req.body.email,
       password: req.body.password
     })
       .then(() => {
         // eslint-disable-next-line no-magic-numbers
-        res.redirect(307, `/api/login`);
+        res.redirect(307, `/login`);
       })
       .catch(err => {
         // eslint-disable-next-line no-magic-numbers
