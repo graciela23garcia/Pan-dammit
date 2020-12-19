@@ -51,10 +51,29 @@ module.exports = function(app) {
       });
   });
   app.post(`/api/moviePage`, (req, res) => {
-    // eslint-disable-next-line no-magic-numbers
-    res.status(200);
+    db.MovieSearch.create({
+      genre: req.body.genre
+    }).then(() => {
+      // eslint-disable-next-line no-magic-numbers
+      res.status(200);
+    }).catch(err => {
+      // eslint-disable-next-line no-magic-numbers
+      res.status(401).json(err);
+    });
   });
   app.get(`/api/moviePage`, (req, res) => {
+    db.MovieSearch.count({
+      where: {
+        genre: `Comedy`
+      }
+    }).then(movieRes => {
+      // eslint-disable-next-line no-magic-numbers
+      console.log(movieRes);
+      res.json(movieRes);
+    }).catch(err => {
+      // eslint-disable-next-line no-magic-numbers
+      res.status(401).json(err);
+    });
     // eslint-disable-next-line no-magic-numbers
     res.status(200);
   });
