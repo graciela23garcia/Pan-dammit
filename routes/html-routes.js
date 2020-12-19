@@ -1,5 +1,6 @@
 'use strict';
-let isAuthenticated = require(`../config/middleware/isAuthenticated`);
+const isAuthenticated = require(`../config/middleware/isAuthenticated`);
+
 // eslint-disable-next-line no-unused-vars
 module.exports = (app, sequelize) => {
   app.get(`/`, (req, res) => {
@@ -29,7 +30,14 @@ module.exports = (app, sequelize) => {
       res.render(`signup`);
     }
   });
-
+  app.get(`/blogPage`, isAuthenticated, (req, res) => {
+    res.render(`blogPage`);
+  });
+  app.get(`/moviePage`, isAuthenticated, (req, res) => {
+    res.render(`moviePage`);
+  });
+  app.get(`/mentalHealthPage`, isAuthenticated, (req, res) => {
+    res.render(`mentalhealth`);
+  });
 };
-
 
