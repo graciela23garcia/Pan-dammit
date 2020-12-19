@@ -2,20 +2,19 @@ nav {
     background-color: #CFD9CE;
     border-bottom: solid #384D47 .25rem;
 }
+
 #brand-name {
     font-family: 'Chango', display;
     font-size: 2.5rem;
     color: #384D47;
 }
+
 #brand-icon {
     width: 5rem;
     height: auto;
     border-radius: 50%;
 }
-<<<<<<< HEAD
 
-=======
 .dropdown-menu {
     float: top right;
 }
->>>>>>> 95b63d051aba4460d744d838ff2d22f706694829
