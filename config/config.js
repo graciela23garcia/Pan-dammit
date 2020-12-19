@@ -1,32 +1,33 @@
-const result = require('dotenv').config();
+'use strict';
+const result = require(`dotenv`).config();
 
 if (result.error) {
-  throw result.error
+  throw result.error;
 }
- 
-console.log(result.parsed)
+
+console.log(result.parsed);
 
 
 module.exports = {
   "development": {
-    "username": "root",
+    "username": `root`,
     "password": process.env.DBPASSWORD,
     "database": process.env.DATABASE,
-    "host": "127.0.0.1",
+    "host": `127.0.0.1`,
     "port": 3306,
-    "dialect": "mysql"
+    "dialect": `mysql`
   },
   "test": {
-    "username": "root",
+    "username": `root`,
     "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "database": `database_test`,
+    "host": `127.0.0.1`,
     "port": 3306,
-    "dialect": "mysql"
+    "dialect": `mysql`
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL",
-    "dialect": "mysql",
+    "use_env_variable": `JAWSDB_URL`,
+    "dialect": `mysql`,
     "operatorsAliases": false
   }
-}
+};

@@ -12,12 +12,12 @@ module.exports = function(app) {
   app.post(`/api/signup`, (req, res) => {
     console.log(req.body);
     db.User.create({
-      email: req.body.email,
+      name: req.body.email,
       password: req.body.password
     })
       .then(() => {
         // eslint-disable-next-line no-magic-numbers
-        res.redirect(307, `/login`);
+        res.redirect(307, `/api/login`);
       })
       .catch(err => {
         // eslint-disable-next-line no-magic-numbers
