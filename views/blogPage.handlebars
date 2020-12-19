@@ -1,0 +1,37 @@
+<nav class="navbar navbar-light">
+      <div class=" container-fluid">
+        <a id="brand-name" class="navbar-brand" href="#">
+           <img id="brand-icon" src="../public/assets/pan-dammit_mascot_colorscheme.png">
+                Pan-dammit
+            </a>
+               <div class="nav-item active">
+ <a class="nav-link" href="/views/mentalhealth.handlebars">Mental Health Resources <span class="sr-only"></span></a>
+               </div>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" href="/views/welcomePage.handlebars">
+   Home
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+    <li><button class="dropdown-item" type="button" href="/views/moviesPage.handlebars"></button>Movies</button></li>
+    <li><button class="dropdown-item" type="button" href="/views/blogPage.handlebars"></button>Blog</button></li>
+  </ul>
+</div>
+</nav>
+
+<div class="mb-3">
+  <label for="Blog" class="form-label">Title</label>
+  <input type="title" class="form-control" id="blogTitle" placeholder="Blog Title">
+</div>
+<div class="mb-3">
+  <label for="blogPost" class="form-label">How are you today?</label>
+  <textarea class="form-control" id="blogPost" rows="3"></textarea>
+</div>
+<button type="submit">Share</button>
+<div class="container-fluid">
+</div>
+<script>
+  var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
+var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+  return new bootstrap.Dropdown(dropdownToggleEl)
+})
+  </script>
