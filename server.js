@@ -2,13 +2,8 @@
 const express = require(`express`);
 const app = express();
 const expressHandlebars = require(`express-handlebars`);
-<<<<<<< HEAD
-const passport = require(`./config/passport`);
-let session = require(`express-session`);
-=======
 const session = require(`express-session`);
 const passport = require(`./config/passport`);
->>>>>>> 219a5ca56d238a387949c5087b3e340b50867a6d
 // eslint-disable-next-line no-magic-numbers
 const PORT = process.env.PORT || 8080;
 const db = require(`./models`);
