@@ -1,54 +1,28 @@
 # Project 2
 
-## Application Requirements
+## OVERVIEW
 
-* Must use a Node and Express server
+Pandemic stress giving you nervous energy? Reach out, seek help, and soothe your mind with Pan-Dammit  resources. Explore movies and discover what other users are searching. Share ideas in our community blog and explore mental health resources. Pan-Dammit is centered around providing support for all!
+USER STORY
 
-* Must use Handlebars.js as the template engine
+AS SOMEONE going through the motions of 2020, 
+I WANT an app that will allow me to find some zen in a time of turmoil,
+SO THAT I can blog about how my everyday has looked, and be able to find suggestions for some self-help or even links available for me to reach out to a professional.
 
-* Must be backed by a MySQL database with a Sequelize ORM
+## TECHNOLOGIES
+* HTML
+* CSS - Bootstrap
+* Javascript
+* jQuery
+* APIs 
+* Heroku
 
-* Must utilize both GET and POST routes for retrieving and adding new data
+## API, LIBRARY AND DATABASES
+* ChartJS
+Chart.js is a JavaScript library used for creating movie genre popularity.
+* Movies DB
+Utilized Movies DB API (/genre/movie/list) to generate movie selections based on the users selection. 
 
-* Must be deployed using Heroku (with data)
-
-* Must utilize at least one new library, package, or technology that we haven’t discussed
-
-* Must have a polished front end/UI
-
-* Must have a folder structure that meets the MVC paradigm
-
-* Must meet good quality coding standards (indentation, scoping, naming)
-
-* Must protect API keys in Node with environment variables
-
-
-## Presentation Requirements
-
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following: 
-
-* Elevator pitch: a one minute description of your application
-
-* Concept: What is your user story? What was your motivation for development?
-
-* Process: What were the technologies used? How were tasks and roles broken down and assigned? What challenges did you encounter? What were your successes?
-
-* Demo: Show your stuff!
-
-* Directions for Future Development
-
-* Links to to the deployed application and the GitHub repository. Use this guide for [deploying your application to Heroku](../04-Important/GitHubHerokuConnect.md) if you need a reminder on how to deploy!
-
-
-## Grading Metrics 
-
-| Metric        | Weight | 
-| ---           | ---    |
-| Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
-| Collaboration | 30%    |
-| Presentation  | 10%    |
 
 
 ## Submission on BCS
