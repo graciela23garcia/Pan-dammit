@@ -34,7 +34,7 @@ $(document).ready(() => {
     console.log(signUpData);
     $.post(`/api/signup`, signUpData)
       .then(() => {
-        window.location.replace(`/members`);
+        window.location.replace(`/welcome`);
         // If there's an error, handle it by throwing up a bootstrap alert
       })
       .catch(handleLoginErr);

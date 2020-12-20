@@ -6,7 +6,8 @@ module.exports = function(app) {
     const user = {
       user: req.user
     };
-    res.render(`login`, user);
+    console.log(`${user}`);
+    res.render(`welcomePage`, user);
   });
 
   app.post(`/api/signup`, (req, res) => {
