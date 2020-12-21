@@ -1,5 +1,6 @@
 'use strict';
 const passport = require(`../config/passport`);
+const db = require(`../models`);
 module.exports = function(app) {
   app.post(`/api/login`, passport.authenticate(`local`), (req, res) => {
     const user = {
@@ -23,6 +24,7 @@ module.exports = function(app) {
       });
   });
   app.post(`/api/blogPage`, (req, res) => {
+    console.log(req.body);
     db.Post.create({
       title: req.body.title,
       body: req.body.body
@@ -51,7 +53,7 @@ module.exports = function(app) {
       });
   });
   app.post(`/api/moviePage`, (req, res) => {
-    db.MovieSearch.create({
+     db.MovieSearch.create({
       genre: req.body.genre
     }).then(() => {
       // eslint-disable-next-line no-magic-numbers
@@ -62,6 +64,7 @@ module.exports = function(app) {
     });
   });
   app.get(`/api/moviePage`, (req, res) => {
+    console.log(req.body);
     db.MovieSearch.count({
       where: {
         genre: `Comedy`

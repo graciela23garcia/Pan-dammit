@@ -1,180 +1,183 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/signUp">
-              <div class="logo-image">
-                    <img src="/assets/logos/pandammit_logo.png" class="img-fluid">
-              </div></a>
-              <a class="navbar-brand" href="/signup">Pan-dammit!</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/welcome">Home <span class="sr-only"></span></a>
-                  </li>
-                  <li class="nav-item active">
-                      <a class="nav-link" href="/mentalHealthPage">Mental Health Resources <span class="sr-only"></span></a>
-                    </li>
-                  <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          More Stuffs
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="/blogPage">Blogs</a>
-                          <a class="dropdown-item" href="/moviePage">Movies</a>
-                        </div>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-        
-            <div class="jumbotron" style="background-image: url('/assets/moviebanner.jpg'); background-size: 100%;">
-                <div class="container" style="height: 200px;">
-                <p class="lead">Looking to take your mind off of things for a while?
-                    Search below for a movie to help you pull through it!</p>
-                </div>
-            </div>
-
-            <div class="row" id="chart">
-            <canvas id="myChart" width="400" height="400"></canvas>
-
-            <div class="box" id="genrebox">
-                    <p class="title">What genre are you looking for?</p>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                          Action
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
-                        <label class="form-check-label" for="defaultCheck2">
-                          Adventure
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
-                        <label class="form-check-label" for="defaultCheck3">
-                          Animation
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
-                        <label class="form-check-label" for="defaultCheck4">
-                          Comedy
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
-                        <label class="form-check-label" for="defaultCheck5">
-                          Crime
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
-                        <label class="form-check-label" for="defaultCheck6">
-                          Documentary
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
-                        <label class="form-check-label" for="defaultCheck7">
-                          Drama
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck8">
-                        <label class="form-check-label" for="defaultCheck8">
-                          Family
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck9">
-                        <label class="form-check-label" for="defaultCheck9">
-                          Fantasy
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck10">
-                        <label class="form-check-label" for="defaultCheck10">
-                          History
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck11">
-                        <label class="form-check-label" for="defaultCheck11">
-                          Horror
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck12">
-                        <label class="form-check-label" for="defaultCheck12">
-                          Music
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck13">
-                        <label class="form-check-label" for="defaultCheck13">
-                          Mystery
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck14">
-                        <label class="form-check-label" for="defaultCheck14">
-                          Romance
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck15">
-                        <label class="form-check-label" for="defaultCheck15">
-                          Science Fiction
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck16">
-                        <label class="form-check-label" for="defaultCheck16">
-                          TV Movie
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck17">
-                        <label class="form-check-label" for="defaultCheck17">
-                          Thriller
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck18">
-                        <label class="form-check-label" for="defaultCheck18">
-                          War
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck19">
-                        <label class="form-check-label" for="defaultCheck19">
-                          Western
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-outline-secondary" background-color: white;>Search</button>
-                </div>
-
-                <div class="container" id="results">
-                    <div class="box">
-                        <img class="car-img-top" src="" alt="results">
-                    </div>
-                </div>
-                </div>
-            </div>
+  <a class="navbar-brand" href="/signUp">
+    <div class="logo-image">
+      <img src="/assets/logos/pandammit_logo.png" class="img-fluid">
+    </div>
+  </a>
+  <a class="navbar-brand" href="/signup">Pan-dammit!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/welcome">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/mentalHealthPage">Mental Health Resources <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          More Stuffs
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/blogPage">Blogs</a>
+          <a class="dropdown-item" href="/moviePage">Movies</a>
         </div>
-            
-            
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: #CFD9CE">
-          © 2020 Copyright:
-          <a class="text-dark" href="/welcome">Pan-dammit</a>
-        </div>
-        <!-- Copyright -->
-      </footer> 
+      </li>
+    </ul>
+  </div>
+</nav>
 
-      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-      <script type="text/javascript" src="/js/index.js"></script>
+<div class="jumbotron" style="background-image: url('/assets/moviebanner.jpg'); background-size: 100%;">
+  <div class="container" style="height: 200px;">
+    <p class="lead">Looking to take your mind off of things for a while?
+      Search below for a movie to help you pull through it!</p>
+  </div>
+</div>
+
+<div class="row" id="chart">
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+  <div class="box" id="genrebox">
+    <p class="title">What genre are you looking for?</p>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Action" id="actionCheck">
+      <label class="form-check-label" for="actionCheck">
+        Action
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Adventure" id="adventCheck">
+      <label class="form-check-label" for="adventCheck">
+        Adventure
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Animation" id="animeCheck">
+      <label class="form-check-label" for="animeCheck">
+        Animation
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Comedy" id="comedyCheck">
+      <label class="form-check-label" for="comedyCheck">
+        Comedy
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Crime" id="crimeCheck">
+      <label class="form-check-label" for="crimeCheck">
+        Crime
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Documentary" id="docCheck">
+      <label class="form-check-label" for="docCheck">
+        Documentary
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Drama" id="dramaCheck">
+      <label class="form-check-label" for="dramaCheck">
+        Drama
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Family" id="famCheck">
+      <label class="form-check-label" for="famCheck">
+        Family
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Fantasy" id="fantCheck">
+      <label class="form-check-label" for="fantCheck">
+        Fantasy
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="History" id="histCheck">
+      <label class="form-check-label" for="histCheck">
+        History
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Horror" id="horrorCheck">
+      <label class="form-check-label" for="horrorCheck">
+        Horror
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Music" id="musicCheck">
+      <label class="form-check-label" for="musicCheck">
+        Music
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Mystery" id="mystCheck">
+      <label class="form-check-label" for="mystCheck">
+        Mystery
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Romance" id="romCheck">
+      <label class="form-check-label" for="romCheck">
+        Romance
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Science Fiction" id="scifiCheck">
+      <label class="form-check-label" for="scifiCheck">
+        Science Fiction
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="TV Movie" id="tvmCheck">
+      <label class="form-check-label" for="tvmCheck">
+        TV Movie
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Thriller" id="thrillCheck">
+      <label class="form-check-label" for="thrillCheck">
+        Thriller
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="War" id="warCheck">
+      <label class="form-check-label" for="warCheck">
+        War
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="radio" value="Western" id="westCheck">
+      <label class="form-check-label" for="westCheck">
+        Western
+      </label>
+    </div>
+    <button type="submit" class="btn btn-outline-secondary" id="searchMovies" background-color: white;>Search</button>
+  </div>
+
+  <div class="container" id="results">
+    <div class="box">
+      <img class="car-img-top" src="" alt="results">
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #CFD9CE">
+    © 2020 Copyright:
+    <a class="text-dark" href="/welcome">Pan-dammit</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script type="text/javascript" src="/js/index.js"></script>
+<script type="text/javascript" src="/js/moviePage.js"></script>
