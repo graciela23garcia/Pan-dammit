@@ -27,32 +27,37 @@ $(document).ready(() => {
   const warRadio = $(`#warRadio`);
   const westRadio = $(`#westRadio`);
 
+  fetch (`/api/moviePage`).then(res => {
+    console.log(`Success movie search retrieved from backend ${res}`);
+  } ).catch(err => {
+    console.log(err.responseJSON);
+  });
 
   searchMovies.on(`click`, () => {
     // eslint-disable-next-line quotes
     console.log($('input[name="radio"]:checked').val());
-    
-    // const blogPost = {
-    //   title: titleInputEl.val().trim(),
-    //   body: blogPostEl.val().trim()
-    // };
-    // if (!blogPost.title || !blogPost.body){
-    //   return;
-    // }
-    // $.post (`/api/moviePage`, blogPost).then(() => {
-    //   console.log(`Success movie search sent to backend ${movieSearch}`);
-    // } ).catch(err => {
-    //   console.log(err.responseJSON);
-    // });
+    // post request
+    const genreSelection = {
+      // eslint-disable-next-line quotes
+      genre: $('input[name="radio"]:checked').val()
+    };
+    if (!genreSelection.genre){
+      return;
+    }
+    $.post (`/api/moviePage`, genreSelection).then(() => {
+      console.log(`Success movie search sent to backend ${genreSelection}`);
+    } ).catch(err => {
+      console.log(err.responseJSON);
+    });
 
   });
 });
 // takes number of searches from database
-// post request
+
 // what we would need is an event listener on the search button
 // anytime that someone searches for something, we send what they are searching to the
 // post to the API Movie page
 // what we are giving the api movie page is the genre
 // line 64 app.get
-// as soon as we go tot hte page, set an ajax call and that will account how many times someone will search for comedy
+// as soon as we go to the page, set an ajax call and that will account how many times someone will search for comedy
 // gets a count of all the different genres in the database and returns it to us
