@@ -26,9 +26,11 @@ $(document).ready(() => {
   const thrillRadio = $(`#thrillRadio`);
   const warRadio = $(`#warRadio`);
   const westRadio = $(`#westRadio`);
-
+  // make url before this line of code.user will select action that equals ID *i.e. 12*. Fetch will be inside the event listener.
   fetch (`/api/moviePage`).then(res => {
     console.log(`Success movie search retrieved from backend ${res}`);
+
+
   } ).catch(err => {
     console.log(err.responseJSON);
   });
@@ -49,7 +51,74 @@ $(document).ready(() => {
     } ).catch(err => {
       console.log(err.responseJSON);
     });
-
+    // things that i will be doing  going to be inside this event listener
+    let genreID=``;
+    switch (genreSelection.genre) {
+    case `Action`:
+      genreID=35;
+      break;
+    case `Adventure`:
+      genreID=35;
+      break;
+    case `Comedy`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+    case `Crime`:
+      genreID=35;
+      break;
+      default: genreID=35;
+        }
+    const queryUrl=`https://api.themoviedb.org/3/discover/movie?api_key=38250e9d78b145164a32b58987b0d9ce&l[…]clude_adult=false&include_video=false&page=1&with_genres=${genreID}`;
+    fetch (queryUrl).then(res =>{
+      console.log(res);
+    });
+    // //template literal above -- that is basically taking whatever the variable equals. I can create variable, i.e. query.url and it would pretty much look like
+    //
   });
 });
 // takes number of searches from database
