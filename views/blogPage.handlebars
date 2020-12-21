@@ -1,21 +1,22 @@
 <nav class="navbar navbar-light">
-      <div class=" container-fluid">
-        <a id="brand-name" class="navbar-brand" href="#">
-           <img id="brand-icon" src="../public/assets/pan-dammit_mascot_colorscheme.png">
-                Pan-dammit
-            </a>
-               <div class="nav-item active">
- <a class="nav-link" href="mentalhealth">Mental Health Resources <span class="sr-only"></span></a>
-               </div>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false" href="welcomePage">
-   Home
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <li><button class="dropdown-item" type="button" href="movies"></button>Movies</button></li>
-    <li><button class="dropdown-item" type="button" href="blog"></button>Blog</button></li>
-  </ul>
-</div>
+  <div class=" container-fluid">
+    <a id="brand-name" class="navbar-brand" href="#">
+      <img id="brand-icon" src="../assets/logos/pandammit_logo.png">
+      Pan-dammit
+    </a>
+    <div class="nav-item active">
+      <a class="nav-link" href="mentalhealth">Mental Health Resources <span class="sr-only"></span></a>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+        aria-expanded="false" href="welcomePage">
+        Home
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button" href="movies"></button>Movies</button></li>
+        <li><button class="dropdown-item" type="button" href="blog"></button>Blog</button></li>
+      </ul>
+    </div>
 </nav>
 
 <div class="mb-3">
@@ -34,7 +35,7 @@
 </div>
 <script>
   var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
-var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-  return new bootstrap.Dropdown(dropdownToggleEl)
-})
-  </script>
+  var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
+    return new bootstrap.Dropdown(dropdownToggleEl)
+  })
+</script>
