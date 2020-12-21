@@ -1,14 +1,15 @@
-const { Sequelize } = require("sequelize");
+'use strict';
+const { Sequelize } = require(`sequelize`);
 
 module.exports = function(sequelize, DataTypes) {
-  const Post = sequelize.define("Post", {
+  const Post = sequelize.define(`Post`, {
     title: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     body: {
       type: DataTypes.TEXT,
-      allowNull: false,
+      allowNull: false
     },
     post_time: Sequelize.DATE
   });
