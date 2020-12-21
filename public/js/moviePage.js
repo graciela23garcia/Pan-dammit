@@ -1,42 +1,49 @@
 'use strict';
 
-console.log(`eureka!`);
+const script = document.createElement(`script`);
+script.src = `https://code.jquery.com/jquery-3.4.1.min.js`;
+script.type = `text/javascript`;
+document.getElementsByTagName(`head`)[0].appendChild(script);
+
 $(document).ready(() => {
   const searchMovies= $(`#searchMovies`);
-  const actionCheck = $(`#actionCheck`);
-  const adventCheck = $(`#adventCheck`);
-  const animeCheck = $(`#animeCheck`);
-  const comedyCheck = $(`#comedyCheck`);
-  const crimeCheck = $(`#crimeCheck`);
-  const docCheck = $(`#docCheck`);
-  const dramaCheck =$(`#dramaCheck`);
-  const famCheck = $(`#famCheck`);
-  const fantCheck = $(`#fantCheck`);
-  const histCheck = $(`#histCheck`);
-  const horrorCheck = $(`#horrorCheck`);
-  const musicCheck = $(`#musicCheck`);
-  const mystCheck = $(`#mystCheck`);
-  const romCheck = $(`#romCheck`);
-  const scifiCheck = $(`#scifiCheck`);
-  const tvmCheck = $(`#tvmCheck`);
-  const thrillCheck = $(`#thrillCheck`);
-  const warCheck = $(`#warCheck`);
-  const westCheck = $(`#westCheck`);
+  const actionRadio = $(`#actionRadio`);
+  const adventRadio = $(`#adventRadio`);
+  const animeRadio = $(`#animeRadio`);
+  const comedyRadio = $(`#comedyRadio`);
+  const crimeRadio = $(`#crimeRadio`);
+  const docRadio = $(`#docRadio`);
+  const dramaRadio =$(`#dramaRadio`);
+  const famRadio = $(`#famRadio`);
+  const fantRadio = $(`#fantRadio`);
+  const histRadio = $(`#histRadio`);
+  const horrorRadio = $(`#horrorRadio`);
+  const musicRadio = $(`#musicRadio`);
+  const mystRadio = $(`#mystRadio`);
+  const romRadio = $(`#romRadio`);
+  const scifiRadio = $(`#scifiRadio`);
+  const tvmRadio = $(`#tvmRadio`);
+  const thrillRadio = $(`#thrillRadio`);
+  const warRadio = $(`#warRadio`);
+  const westRadio = $(`#westRadio`);
 
 
   searchMovies.on(`click`, () => {
-    const blogPost = {
-      title: titleInputEl.val().trim(),
-      body: blogPostEl.val().trim()
-    };
-    if (!blogPost.title || !blogPost.body){
-      return;
-    }
-    $.post (`/api/moviePage`, blogPost).then(() => {
-      console.log(`Success movie search sent to backend ${movieSearch}`);
-    } ).catch(err => {
-      console.log(err.responseJSON);
-    });
+    // eslint-disable-next-line quotes
+    console.log($('input[name="radio"]:checked').val());
+    
+    // const blogPost = {
+    //   title: titleInputEl.val().trim(),
+    //   body: blogPostEl.val().trim()
+    // };
+    // if (!blogPost.title || !blogPost.body){
+    //   return;
+    // }
+    // $.post (`/api/moviePage`, blogPost).then(() => {
+    //   console.log(`Success movie search sent to backend ${movieSearch}`);
+    // } ).catch(err => {
+    //   console.log(err.responseJSON);
+    // });
 
   });
 });
