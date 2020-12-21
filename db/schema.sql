@@ -25,6 +25,25 @@ CREATE TABLE `movie_data`
 (
 	`id` int NOT NULL AUTO_INCREMENT,
   `genre` varchar(32),
+  `actionCount` INTEGER,
+  `adventureCount` INTEGER,
+  `animationCount`INTEGER,
+  `comedyCount`INTEGER,
+  `crimeCount`INTEGER,
+  `documentaryCount`INTEGER,
+  `dramaCount`INTEGER,
+  `familyCount`INTEGER,
+  `fantasyCount`INTEGER,
+  `historyCount`INTEGER,
+  `horrorCount`INTEGER,
+  `musicCount`INTEGER,
+  `mysteryCount`INTEGER,
+  `romanceCount`INTEGER,
+  `scienceFictionCount`INTEGER,
+  `tvMovieCount`INTEGER,
+  `thrillerCount`INTEGER,
+  `warCount`INTEGER,
+  `westernCount` INTEGER,
 	PRIMARY KEY ( `id` )
 );
 
