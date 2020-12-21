@@ -56,7 +56,7 @@ module.exports = function(app) {
       });
   });
   app.post(`/api/moviePage`, (req, res) => {
-    db.MovieSearch.create({
+     db.MovieSearch.create({
       genre: req.body.genre
     }).then(() => {
       // eslint-disable-next-line no-magic-numbers
@@ -67,6 +67,7 @@ module.exports = function(app) {
     });
   });
   app.get(`/api/moviePage`, (req, res) => {
+    console.log(req.body);
     db.MovieSearch.count({
       where: {
         genre: `Comedy`
