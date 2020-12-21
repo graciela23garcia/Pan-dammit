@@ -2,7 +2,7 @@
 
 console.log("eureka!");
 
-
+document.getElementById""
 // takes number of searches from database
 // post request 
 // what we would need is an event listener on the search button
