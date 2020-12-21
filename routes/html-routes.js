@@ -30,11 +30,11 @@ module.exports = (app, sequelize) => {
       res.render(`signup`);
     }
   });
-  app.get(`/blogPage`, isAuthenticated, (req, res) => {
+  // add is authenticated back at some point
+  app.get(`/blogPage`, (req, res) => {
     res.render(`blogPage`);
   });
-  
-  //re-add isAuthenticated once working
+  // re-add isAuthenticated once working
   app.get(`/moviePage`, (req, res) => {
     res.render(`movies`);
   });
