@@ -1,7 +1,7 @@
 <nav class="navbar navbar-light">
       <div class=" container-fluid">
         <a id="brand-name" class="navbar-brand" href="#">
-           <img id="brand-icon" src="../public/assets/pan-dammit_mascot_colorscheme.png">
+           <img id="brand-icon" src="../assets/logos/favicon.ico">
                 Pan-dammit
             </a>
                <div class="nav-item active">
@@ -12,8 +12,8 @@
    Home
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <li><button class="dropdown-item" type="button" href="movies"></button>Movies</button></li>
-    <li><button class="dropdown-item" type="button" href="blog"></button>Blog</button></li>
+    <li><button class="dropdown-item" type="button" href="/moviePage"></button>Movies</button></li>
+    <li><button class="dropdown-item" type="button" href="/blogPage"></button>Blog</button></li>
   </ul>
 </div>
 </nav>
@@ -26,15 +26,22 @@
   <label for="blogPost" class="form-label">How are you today?</label>
   <textarea class="form-control" id="blogPost" rows="3"></textarea>
 </div>
-<button type="submit">Share</button>
+<button id="submitBtn" type="submit">Share</button>
 <div class="maincontainer-fluid">
   <h1>User:</h1>
   <h2>Title:</h2>
 
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script>
   var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
 var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
   return new bootstrap.Dropdown(dropdownToggleEl)
 })
   </script>
+  <script type="text/javascript" src="/js/blogPage.js"></script>
