@@ -59,3 +59,14 @@ nav {
     height: auto;
     border-radius: 50%;
 }
+
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
+#movies{
+	border: 50px;
+}
+.checkbox{
+	padding: 0px;
+}
