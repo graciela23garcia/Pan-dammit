@@ -30,13 +30,15 @@ module.exports = (app, sequelize) => {
       res.render(`signup`);
     }
   });
-  app.get(`/blogPage`, isAuthenticated, (req, res) => {
+  // add is authenticated back at some point
+  app.get(`/blogPage`, (req, res) => {
     res.render(`blogPage`);
   });
-  app.get(`/moviePage`, isAuthenticated, (req, res) => {
-    res.render(`moviePage`);
+  // re-add isAuthenticated once working
+  app.get(`/moviePage`, (req, res) => {
+    res.render(`movies`);
   });
-  app.get(`/mentalHealthPage`, isAuthenticated, (req, res) => {
+  app.get(`/mentalHealthPage`, (req, res) => {
     res.render(`mentalhealth`);
   });
 };

@@ -1,6 +1,7 @@
 'use strict';
 const db = require(`../models`);
 const passport = require(`../config/passport`);
+const db = require(`../models`);
 module.exports = function(app) {
   app.post(`/api/login`, passport.authenticate(`local`), (req, res) => {
     const user = {
@@ -26,6 +27,7 @@ module.exports = function(app) {
       });
   });
   app.post(`/api/blogPage`, (req, res) => {
+    console.log(req.body);
     db.Post.create({
       title: req.body.title,
       body: req.body.body

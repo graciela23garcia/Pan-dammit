@@ -25,12 +25,12 @@ app.use(passport.initialize());
 // Manages user data in session
 app.use(passport.session());
 
-require(`./routes/html-routes.js`)(app, db.sequelize);
-require(`./routes/api-routes.js`)(app, db.sequelize);
 
 app.engine(`handlebars`, expressHandlebars({ defaultLayout: `main` }));
 app.set(`view engine`, `handlebars`);
-
+// immediately invoked function express
+require(`./routes/html-routes.js`)(app, db.sequelize);
+require(`./routes/api-routes.js`)(app, db.sequelize);
 db.sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);

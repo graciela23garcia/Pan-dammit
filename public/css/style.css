@@ -70,3 +70,15 @@ body{
 .checkbox{
 	padding: 0px;
 }
+
+#chart{
+	padding: 150px;
+}
+#genrebox{
+	padding: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+#results{
+	margin-top: 200px;
+}
