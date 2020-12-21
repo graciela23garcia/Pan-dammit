@@ -1,8 +1,6 @@
-"use strict";
+'use strict';
 
-
-
-
+console.log("eureka!");
 
 
 // takes number of searches from database
