@@ -33,10 +33,12 @@ module.exports = (app, sequelize) => {
   app.get(`/blogPage`, isAuthenticated, (req, res) => {
     res.render(`blogPage`);
   });
-  app.get(`/moviePage`, isAuthenticated, (req, res) => {
-    res.render(`moviePage`);
+  
+  //re-add isAuthenticated once working
+  app.get(`/moviePage`, (req, res) => {
+    res.render(`movies`);
   });
-  app.get(`/mentalHealthPage`, isAuthenticated, (req, res) => {
+  app.get(`/mentalHealthPage`, (req, res) => {
     res.render(`mentalhealth`);
   });
 };
