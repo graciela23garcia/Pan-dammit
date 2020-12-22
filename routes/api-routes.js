@@ -2,11 +2,13 @@
 const passport = require(`../config/passport`);
 const db = require(`../models`);
 module.exports = function(app) {
-  app.post(`/api/login`, passport.authenticate(`local`), (req, res) => {
+  // re-add below: passport.authenticate(`local`),
+  app.post(`/api/login`, (req, res) => {
+    console.log(req);
     const user = {
       user: req.user
     };
-    res.render(`login`, user);
+    res.render(`welcomePage`, user);
   });
 
   app.post(`/api/signup`, (req, res) => {

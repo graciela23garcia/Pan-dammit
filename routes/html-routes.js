@@ -18,8 +18,8 @@ module.exports = (app, sequelize) => {
       res.render(`login`);
     }
   });
-
-  app.get(`/welcome`, isAuthenticated, (req, res) => {
+// add in below: isAuthenticated,
+  app.get(`/welcome`, (req, res) => {
     res.render(`welcomePage`);
   });
 
