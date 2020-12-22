@@ -35,6 +35,9 @@ The MySQL database was set up using three tables. Users, Posts and Movie Data. U
 #### Here are the package.json dependencies:
 <img width="167" alt="pandammitdependancies" src="https://user-images.githubusercontent.com/70172286/102854851-408e5a00-43d8-11eb-9394-910c64285a92.PNG">
 
+## Code style
+Pan-dammit utilizes ESLint to enforce consistent code. Code linting checks code for errors and style inconsistencies. Code quality guildines for ESLint are determined by the options defined in .eslintrc
+
 ### Screenshots 
 
 <img width="290" alt="pandammitscreenshot" src="https://user-images.githubusercontent.com/70172286/102855101-d3c78f80-43d8-11eb-93ed-a4a337086d80.PNG">
