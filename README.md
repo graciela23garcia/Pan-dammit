@@ -1,4 +1,4 @@
-![logo](public\assets\logos\apple-touch-icon.png)
+![logo](public\assets\logos\Pandammit_logo_readme_white.png)
 ## OVERVIEW/MOTIVATION
 
 Pandemic stress giving you nervous energy? Reach out, seek help, and soothe your mind with Pan-Dammit  resources. Explore movies and discover what other users are searching. Share ideas in our community blog and explore mental health resources. Pan-Dammit is centered around providing support for all!
