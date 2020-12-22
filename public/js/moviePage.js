@@ -105,7 +105,7 @@ $(document).ready(() => {
     case `Crime`:
       genreID=35;
       break;
-    case `Crime`:
+    case `Crime`:git
       genreID=35;
       break;
     case `Crime`:
