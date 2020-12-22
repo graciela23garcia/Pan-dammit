@@ -46,7 +46,7 @@ $(document).ready(() => {
   }
   // eslint-disable-next-line no-unused-vars
   function handleLoginErr(err) {
-    $(`#alert .msg`).text(err.responseJSON);
+    $(`#alert .msg`).text(JSON.stringify(err.responseJSON));
     // eslint-disable-next-line no-magic-numbers
     $(`#alert`).fadeIn(500);
   }

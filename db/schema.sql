@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS users;
 CREATE DATABASE users;
 USE users;
 
-SELECT * FROM users.moviesearches
+SELECT * FROM users.users
 CREATE TABLE IF NOT EXISTS `Users` (
   `id` Int AUTO_INCREMENT NOT NULL,
   `username` VARCHAR(32) NOT NULL,
