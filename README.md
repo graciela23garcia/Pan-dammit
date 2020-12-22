@@ -1,3 +1,5 @@
+![alt text][logo]
+
 [logo]: https://github.com/graciela23garcia/Pan-dammit/blob/main/public/assets/logos/pandammit_logo_text.png "Logo"
 
 ## OVERVIEW/MOTIVATION
@@ -10,9 +12,14 @@ AS SOMEONE going through the motions of 2020,
 I WANT an app that will allow me to find some zen in a time of turmoil,
 SO THAT I can blog about how my everyday has looked, and be able to find suggestions for some self-help or even links available for me to reach out to a professional.
 
+
 ## API, LIBRARY AND DATABASES
 ### ChartJS
 Chart.js is a JavaScript library used for creating movie genre popularity chart. Data-driven decision making  encourages the user to explore different movie genres.
+
+<img width="324" alt="PanDammitChart" src="https://user-images.githubusercontent.com/70172286/102854682-decdf000-43d7-11eb-8f2b-fa1d71a731ca.PNG">
+
+
 ### The Movie Database API
 Utilized TMDb API (/genre/movie/list) to generate movie options based on users selection. [The Movie Database Api Documentation](https://www.themoviedb.org/documentation/api?language=en-US)
 ### Database
@@ -25,6 +32,13 @@ The MySQL database was set up using three tables. Users, Posts and Movie Data. U
 * Heroku
 * Node + Express
 * MySql + Sequelize 
+#### Here are the package.json dependencies:
+<img width="167" alt="pandammitdependancies" src="https://user-images.githubusercontent.com/70172286/102854851-408e5a00-43d8-11eb-9394-910c64285a92.PNG">
+
+### Screenshots 
+
+<img width="290" alt="pandammitscreenshot" src="https://user-images.githubusercontent.com/70172286/102855101-d3c78f80-43d8-11eb-93ed-a4a337086d80.PNG">
+
 
 ## CREDITS
 * @daniarinker
