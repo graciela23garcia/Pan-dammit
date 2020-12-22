@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 ![logo](public\assets\logos\Pandammit_logo_readme_white.png)
 ## OVERVIEW/MOTIVATION
 
+=======
+![logo](public\assets\logos\apple-touch-icon.png)
+## OVERVIEW/MOTIVATION
+[logo]: https://github.com/graciela23garcia/Pan-dammit/blob/main/public/assets/logos/pandammit_logo_text.png "Logo"
+
+### OVERVIEW/MOTIVATION
+>>>>>>> d51fce2f18bbd2f4f4a98e76bcabcc0fb736c544
 Pandemic stress giving you nervous energy? Reach out, seek help, and soothe your mind with Pan-Dammit  resources. Explore movies and discover what other users are searching. Share ideas in our community blog and explore mental health resources. Pan-Dammit is centered around providing support for all!
 
 ### USER STORY
