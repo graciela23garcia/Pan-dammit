@@ -1,4 +1,7 @@
-![logo](public\assets\logos\Pandammit_logo_readme_white.png)
+![alt text][logo]
+
+[logo]: https://github.com/graciela23garcia/Pan-dammit/blob/main/public/assets/logos/Pandammit_logo_readme_black.png "Logo"
+
 ## OVERVIEW/MOTIVATION
 
 Pandemic stress giving you nervous energy? Reach out, seek help, and soothe your mind with Pan-Dammit  resources. Explore movies and discover what other users are searching. Share ideas in our community blog and explore mental health resources. Pan-Dammit is centered around providing support for all!
@@ -34,7 +37,7 @@ Pan-dammit features a relatable concept and useful application that is easy to f
 * Node + Express
 * MySql + Sequelize 
 ##### Here are the package.json dependencies:
-<img width="290" alt="pandammitdependancies" src="https://user-images.githubusercontent.com/70172286/102854851-408e5a00-43d8-11eb-9394-910c64285a92.PNG">
+<img width="300" alt="pandammitdependancies" src="https://user-images.githubusercontent.com/70172286/102854851-408e5a00-43d8-11eb-9394-910c64285a92.PNG">
 
 ### CODE STYLE
 Pan-dammit utilizes ESLint to enforce consistent code. Code linting checks code for errors and style inconsistencies. Code quality guildines for ESLint are determined by the options defined in .eslintrc
