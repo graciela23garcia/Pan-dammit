@@ -1,5 +1,6 @@
+'use strict';
 module.exports = function(sequelize, DataTypes) {
-  const User = sequelize.define("User", {
+  const User = sequelize.define(`User`, {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -17,7 +18,7 @@ module.exports = function(sequelize, DataTypes) {
   User.associate = function(models) {
     // Associating User with Posts
     User.hasMany(models.Post, {
-      onDelete: "CASCADE"
+      onDelete: `CASCADE`
     });
   };
 
