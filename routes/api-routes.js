@@ -43,12 +43,11 @@ module.exports = function(app) {
   });
   app.get(`/api/blogPage`, (req, res) => {
     db.Post.findAll({
-      order: [`post_time`, `DESC`]
     })
       .then(allBlogPosts => {
       // eslint-disable-next-line no-magic-numbers
         console.log(allBlogPosts);
-        res.render(`blogPage`, allBlogPosts);
+        res.json(allBlogPosts);
       })
       .catch(err => {
       // eslint-disable-next-line no-magic-numbers
@@ -56,7 +55,7 @@ module.exports = function(app) {
       });
   });
   app.post(`/api/moviePage`, (req, res) => {
-     db.MovieSearch.create({
+    db.MovieSearch.create({
       genre: req.body.genre
     }).then(() => {
       // eslint-disable-next-line no-magic-numbers
