@@ -12,13 +12,14 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false
     },
     post_time: Sequelize.DATE
+
   });
 
   Post.associate = function(models) {
     // A Post belongs to a User
     Post.belongsTo(models.User, {
       foreignKey: {
-        allowNull: false
+        allowNull: true
       }
     });
   };
