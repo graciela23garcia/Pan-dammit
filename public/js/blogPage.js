@@ -2,7 +2,7 @@
 /* eslint-disable no-magic-numbers */
 'use strict';
 
-modeule.exports = function(sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   const Post = sequelize.define(`Post`, {
     title : {
       type: DataTypes.STRING,
@@ -12,7 +12,7 @@ modeule.exports = function(sequelize, DataTypes) {
       }
     },
     body: {
-      type: DataTypes.Text,
+      type: DataTypes.TEXT,
       allowNull: false,
       validate: {
         len: [1]
@@ -25,7 +25,7 @@ modeule.exports = function(sequelize, DataTypes) {
         len: [1]
       }
     },
-    UserID: {
+    userId: {
       type: DataTypes.INTEGER,
       allowNull: false
 
